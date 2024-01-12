@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+ 
+  
+<body>
+    <div>
+       <h1>Spam Classifier</h1>
+   
+        <!-- Main Input For Receiving Query to our ML -->
+        <form action="{{ url_for('predict')}}" method="POST">
+            <p>Enter Your Message Here</p>
+            
+            <textarea name="message"  cols="100" rows="10"></textarea>
+            <br/>
+    
+            <input type="submit"  value="predict">
+            
+    
+        </form>
+		
+	</div>
+
+    </body>
+
+    <br>
+    <br>
+      {{ prediction_text }}
+
+
+     
+
+</head>
+
+</html>
+
+
+
+
