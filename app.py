@@ -26,9 +26,9 @@ def predict():
 
         # Map numeric prediction to class labels
         if prediction_numeric == 0:
-            my_prediction = "ham"
+            my_prediction = "Given message is ham"
         else:
-            my_prediction = "spam"
+            my_prediction = "Given message is spam"
 
     return render_template('home.html', prediction_text=my_prediction)
 
